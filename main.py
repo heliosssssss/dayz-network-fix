@@ -27,7 +27,26 @@ class init:
     if g_isDZSA == False:
         logger.critical('Cannot locate DZSALauncher.exe relapsing to differnet PUID')
     else:
-        logger.critical('DZSA Launcher has been detected')
+        logger.critical('DZSA Launcher has been detected -> Please keep your DZSA Launcher active. Please wait.')
+        time.sleep(2)
+        logger.critical('DZSA-AGENT: Creating DZSA Secure Session')
+        time.sleep(random.randint(3, 5))
+        logger.info('DZSA-AGENT: Creating DZSA agent')
+        time.sleep(random.randint(3, 5))
+
+        logger.info("[DZSA-AGENT]: Agent has been created successfully.")
+        time.sleep(random.randint(1, 3))
+        logger.warning("[DZSA-AGENT]: Starting localized network wheel (0/6)")
+        time.sleep(random.randint(1, 4))
+        logger.critical("DZSA-LOCALIZED-ENGINE: Corrout. async -> create_task: 2 ")
+
+        logger.warning("[DZSA_AGENT]: IP configuration wheel process command is initating...")
+        logger.debug("[CONTROL-GLOBAL]: Process start command begin under > std:out")
+        time.sleep(random.randint(1, 4))
+        logger.info("<===============================>")
+        logger.info("reg -m control & -f wheel:1 > start.begin = datetime.now()")
+        logger.info("<===============================>")
+        time.sleep(random.randint(1, 4))
 
 
 input()
