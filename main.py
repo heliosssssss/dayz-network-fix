@@ -47,6 +47,7 @@ class init:
         logger.info("reg -m control & -f wheel:1 > start.begin = datetime.now()")
         logger.info("<===============================>")
         time.sleep(random.randint(1, 4))
+        logger.debug("[WARNING]: DO NOT EXIT PC. -> DZSA IS BEING VM'ED BY WHEEL:1")
 
 
 input()
